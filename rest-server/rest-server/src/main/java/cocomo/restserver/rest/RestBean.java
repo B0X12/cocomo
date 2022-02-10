@@ -1,4 +1,4 @@
-package cocomo.restserver;
+package cocomo.restserver.rest;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,8 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class MainControlBean
-{
+public class RestBean {
+
     private String message;
 
 }

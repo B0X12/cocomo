@@ -1,11 +1,11 @@
-package cocomo.restserver;
+package cocomo.restserver.rest;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @org.springframework.web.bind.annotation.RestController
-public class RestController
-{
+public class RestController {
+
     // GET
     // endpoint
     @GetMapping("/cocomo")
@@ -15,16 +15,16 @@ public class RestController
     }
 
     @GetMapping("/cocomo-json")
-    public MainControlBean mainControlBean()
+    public RestBean restBean()
     {
-        return new MainControlBean("hello?");
+        return new RestBean("hello?");
         // message: hello와 같은 형식으로 보여짐 (json)
     }
 
     @GetMapping("/cocomo-json/{id}")
-    public MainControlBean mainControlBean(@PathVariable String id)
+    public RestBean restBean(@PathVariable String id)
     {
-        return new MainControlBean(String.format("안녕하세요, %s님!", id));
+        return new RestBean(String.format("안녕하세요, %s님!", id));
         // message: hello와 같은 형식으로 보여짐 (json)
     }
 }
