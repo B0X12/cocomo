@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-  
-  
+
 **COCOMO**</br>
 2022 Winter project  
   
@@ -15,79 +13,36 @@
 ## 파일 구성
   
 - ***android***  
-	QR 코드 스캐너입니다.  
-	JSON 형식의 데이터를 파싱할 수 있습니다.  
+	회원가입 및 OTP/QR/지문 인증을 수행하기 위한 목적의 앱입니다.
+	앱에 로그인 한 user의 PC를 원격으로 스크린락하는 기능을 포함합니다.
 	
 - ***cocomo***  
 	QR 코드 생성기입니다.  
 	JSON 형식의 데이터를 기반으로 QR을 생성합니다.  
 	
-- ***server***  
-	Spring boot의 MVC 패턴을 통해 작성된 서버입니다.  
-	*android - client - db* 각각의 통신에 사용됩니다.  
-	~~(차후 Rest API로 간소화 될 수 있습니다.)~~  
+- ***rest-server***  
+	~~Spring boot의 MVC 패턴을 통해 작성된 서버입니다.~~  
+	-> 현재 REST API를 사용한 RESTful Web으로 수정하였습니다.
+	*android - client - db*의 통신에 사용됩니다.  
+	  
 </br></br>
   
   
 ## 사용 기술 및 라이브러리
   
 **IDE, DB**  
- - Intelij & Eclipse (Java 개발에 사용)  
+ - Intelij & Eclipse 
+ - Visual Studio 2019
  - Android Studio  
  - H2 Database (`\H2\bin>h2.bat`로 실행)  
   
 **ETC**  
+ - C#
  - Java 11  
- - Java swing (GUI)  
+ - Java swing
  - Spring boot  
  - Rest API  
  - zxing  
  - lombok
   
-=======
-  
-  
-**COCOMO**</br>
-2022 Winter project  
-  
----
-  
-2022년 겨울방학 단기 프로젝트 (10주) 관련 문서를 정리해둔 파일입니다.  
-백업 용도로 사용되고 있으니 참고바랍니다.  
-</br></br>
-  
-  
-  
-## 파일 구성
-  
-- ***android***  
-	QR 코드 스캐너입니다.  
-	JSON 형식의 데이터를 파싱할 수 있습니다.  
-	
-- ***cocomo***  
-	QR 코드 생성기입니다.  
-	JSON 형식의 데이터를 기반으로 QR을 생성합니다.  
-	
-- ***server***  
-	Spring boot의 MVC 패턴을 통해 작성된 서버입니다.  
-	*android - client - db* 각각의 통신에 사용됩니다.  
-	~~(차후 Rest API로 간소화 될 수 있습니다.)~~  
-</br></br>
-  
-  
-## 사용 기술 및 라이브러리
-  
-**IDE, DB**  
- - Intelij & Eclipse (Java 개발에 사용)  
- - Android Studio  
- - H2 Database (`\H2\bin>h2.bat`로 실행)  
-  
-**ETC**  
- - Java 11  
- - Java swing (GUI)  
- - Spring boot  
- - Rest API  
- - zxing  
- - lombok
-  
->>>>>>> 47b9b01eb46305488b5a80ab58d41f7bb640b7c9
+

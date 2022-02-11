@@ -2,6 +2,8 @@ package cocomo.restserver.define;
 
 public class Path {
 
+    public static final String ADMIN = "/admin";
+
     // 사용자 관련
     private static final String USER = "/users";
     public static final String LOGIN = USER + "/login";

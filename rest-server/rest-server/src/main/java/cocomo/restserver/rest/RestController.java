@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 @org.springframework.web.bind.annotation.RestController
 public class RestController {
 
-    // GET
-    // endpoint
     @GetMapping("/cocomo")
     public String mainControl()
     {
@@ -18,6 +16,7 @@ public class RestController {
     public RestBean restBean()
     {
         return new RestBean("hello?");
+        // 반환형이 클래스면
         // message: hello와 같은 형식으로 보여짐 (json)
     }
 
@@ -25,6 +24,5 @@ public class RestController {
     public RestBean restBean(@PathVariable String id)
     {
         return new RestBean(String.format("안녕하세요, %s님!", id));
-        // message: hello와 같은 형식으로 보여짐 (json)
     }
 }
