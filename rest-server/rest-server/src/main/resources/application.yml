@@ -8,3 +8,18 @@ logging:
   level:
     org.springframework: DEBUG
 
+# use: Postman - Authorization - Basic Type
+# Related to access control
+spring:
+  jpa:
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+  security:
+    user:
+      name: admin
+      password: admin_password
+

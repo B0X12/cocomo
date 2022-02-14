@@ -1,6 +1,7 @@
 package cocomo.restserver.user;
 
-import org.apache.coyote.Response;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -9,8 +10,11 @@ import javax.validation.Valid;
 import java.net.URI;
 import java.util.List;
 
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
+
 @RestController
-public class UserController {
+public class UserController { // db 없이 돌아감
 
     private UserDaoService service;
     public UserController(UserDaoService service) // 의존성 추가
@@ -39,9 +43,9 @@ public class UserController {
     }
 
     @GetMapping("/users/{id}")
-    public User retrieveUser(@PathVariable int id) // 특정 유저 조회
+    public EntityModel<User> retrieveUser(@PathVariable int id) // 특정 유저 조회
     {
-        User user =  service.findOne(id);
+        User user = service.findOne(id);
 
         if (user == null)
         {
@@ -50,7 +54,12 @@ public class UserController {
             throw new UserNotFoundException(String.format("ID[%s] not found", id));
         }
 
-        return user;
+        // HATEOAS
+        EntityModel model = EntityModel.of(user);
+        WebMvcLinkBuilder linkTo = linkTo(methodOn(this.getClass()).retrieveAllUsers());
+        model.add(linkTo.withRel("all-users"));
+
+        return model;
     }
 
     @DeleteMapping("/users/{id}")
