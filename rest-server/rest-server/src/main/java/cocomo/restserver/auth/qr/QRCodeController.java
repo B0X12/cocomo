@@ -1,5 +1,6 @@
 package cocomo.restserver.auth.qr;
 
+import cocomo.restserver.user.UserRepository;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.EncodeHintType;
 import com.google.zxing.WriterException;
@@ -17,10 +18,10 @@ import java.util.Hashtable;
 
 import javax.imageio.ImageIO;
 
-public class QRCode_CreateAndSave
+public class QRCodeController
 {
 
-	private static QRCode_Data qrData = new QRCode_Data();
+	private static QRCodeData qrData = new QRCodeData();
 	private static int fileNumber = 0;
 	private static LocalTime currentTime;
 	private static String currentTimeStr;

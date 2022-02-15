@@ -4,9 +4,7 @@ import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.Random;
-import java.util.Scanner;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
@@ -22,38 +20,31 @@ public class OtpController {
         // TODO Auto-generated method stub
     }
 
-    public static String createOtp() throws InvalidKeyException, NoSuchAlgorithmException
+    public static String createOtp(String otpKey) throws InvalidKeyException, NoSuchAlgorithmException
     {
-        Scanner scanner = new Scanner(System.in);
-        String inputData;
+        String otpCode = generateOtp(otpKey);
+        // generateOtp : KEY를 인자로 받아 OTP CODE를 생성함
 
-        String otp = checkCode("701275", "hellomynameispp21");
-
-        return otp;
+        return otpCode;
     }
 
-    public static HashMap<String, String> generate(String name, String host) {
-        HashMap<String, String> map = new HashMap<String, String>();
+    public static String generateKey(String name)
+    {
         byte[] buffer = new byte[5 + 5 * 5];
         new Random().nextBytes(buffer);
         Base32 codec = new Base32();
         byte[] secretKey = Arrays.copyOf(buffer, 10);
         byte[] bEncodedKey = codec.encode(secretKey);
-
         String encodedKey = new String(bEncodedKey);
 
-        map.put("encodedKey", encodedKey);
-
-        return map;
+        return encodedKey;
     }
 
-    public static String checkCode(String userCode, String otpkey)
-            throws InvalidKeyException, NoSuchAlgorithmException {
-        long otpnum = Integer.parseInt(userCode);
+    public static String generateOtp(String otpkey) throws InvalidKeyException, NoSuchAlgorithmException
+    {
         long wave = new Date().getTime() / 30000;
-        boolean result = false;
-        String str = "h";
-        String res = "";
+        String str, res;
+        res = "";
 
         try {
             Base32 codec = new Base32();
@@ -63,10 +54,7 @@ public class OtpController {
             for (int i = -window; i <= window; ++i) {
                 long hash = verify_code(decodedKey, wave + i);
                 cnt++;
-                if (hash == otpnum)
-                    result = true;
                 str = String.valueOf(hash);
-                // System.out.println(str);
                 if (cnt == 4) {
                     if (hash < 10)
                         res = "00000" + str;

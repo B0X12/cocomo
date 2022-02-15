@@ -1,8 +1,11 @@
 package cocomo.restserver.auth;
 
 import cocomo.restserver.user.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.swing.text.html.Option;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,8 +17,8 @@ public class AuthUserDaoService {
 
     static {
         // DB 확인 위해 임의로 넣어둔 데이터
-        authUsers.add(new AuthUser(0, null));
-        authUsers.add(new AuthUser(1, null));
+        authUsers.add(new AuthUser(0, null, null));
+        authUsers.add(new AuthUser(1, null, null));
     }
 
     public AuthUser save(AuthUser user)

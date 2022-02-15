@@ -39,10 +39,14 @@ public class UserJpaController {
             throw new UserNotFoundException(String.format("ID[%s] not found", id));
         }
 
+        // hateoas
         EntityModel model = EntityModel.of(user);
-        WebMvcLinkBuilder linkTo = linkTo(methodOn(this.getClass()).retrieveAllUsers());
-        model.add(linkTo.withRel("all-users"));
 
+        // 이 user에 대한 값을 반환시킬 때,
+        // user가 사용할 수 있는 추가적인 정보를 hyperlink로 넣어줌
+        WebMvcLinkBuilder linkTo = linkTo(methodOn(this.getClass()).retrieveAllUsers());
+
+        model.add(linkTo.withRel("all-users"));
         return model;
     }
 

@@ -1,11 +1,7 @@
 package cocomo.restserver.user;
 
-import com.fasterxml.jackson.annotation.JsonFilter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Generated;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
@@ -16,9 +12,9 @@ import javax.validation.constraints.Size;
 import java.util.Date;
 
 @Data
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
 //@JsonIgnoreProperties(value={"passwd", "joinDate"})
 //@JsonFilter("UserInfo") // w/o Hateoas (클라이언트에게 uri 정보 제공)
 public class User {
@@ -30,7 +26,7 @@ public class User {
     private String passwd; // 외부에 노출 안되는 데이터
 
     @Size(min = 3, message = "이름은 2글자 이상 입력해주세요.")
-    private String name;
+    private String userName;
     private String email;
 
     @Past private Date joinDate; // 과거 데이터로만

@@ -15,7 +15,7 @@ import javax.swing.*;
 import cocomo.restserver.define.Path;
 import com.google.zxing.WriterException;
 
-public class QrCode_ImageView extends JFrame implements ActionListener {
+public class QrCodeImageView extends JFrame implements ActionListener {
 	public static int fileList = 0;
 
 	private Font font = new Font("210 모던굴림 Regular", Font.PLAIN, 14);
@@ -27,10 +27,10 @@ public class QrCode_ImageView extends JFrame implements ActionListener {
 	private Image qrImg = new ImageIcon("src/main/java/cocomo/qrcode/cocomoQR" + fileList + ".png").getImage();
 	// └-> QRCode_CreateAndSave.class.getResource("../cocomoQR.png")는 안됨
 
-	private static QRCode_Data qrData = new QRCode_Data();
+	private static QRCodeData qrData = new QRCodeData();
 
 
-	public QrCode_ImageView() // 생성자
+	public QrCodeImageView() // 생성자
 	{
 		// 창 세팅
 		setTitle("QrCode");
@@ -111,7 +111,7 @@ public class QrCode_ImageView extends JFrame implements ActionListener {
 				if (fileList != 0) { fileList = 0; } // label은 0과 1만 사용 (파일 무한생성 방지)
 				else { fileList++; }
 
-				qrData.setTime(fileList, QRCode_CreateAndSave.Id); // QR코드 재생성
+				qrData.setTime(fileList, QRCodeController.Id); // QR코드 재생성
 				timer.cancel();
 				setTimer(); // 남은 시간 갱신
 			} catch (WriterException | IOException e1) {

@@ -9,9 +9,9 @@ import com.google.zxing.WriterException;
 
 import org.json.simple.JSONObject;
 
-public class QRCode_Data {
+public class QRCodeData {
 
-	private static QRCode_CreateAndSave qrCreate = new QRCode_CreateAndSave();
+	private static QRCodeController qrCreate = new QRCodeController();
 
 	public static LocalTime currentTime;
 	public static String currentTimeStr;
@@ -28,7 +28,7 @@ public class QRCode_Data {
 
 		// 파일위치 및 파일명, 링크주소, 사이즈, 이미지타입
 		// 파일명에 라벨링을 안해주면 이미지 갱신이 안됨
-		QRCode_CreateAndSave.createQRImage(new File(Path.PATH_QR + "/cocomoQR" + fileNum + ".png")
+		QRCodeController.createQRImage(new File(Path.PATH_QR + "/cocomoQR" + fileNum + ".png")
 				, resultJson.toString(), 400, "png");
 	}
 
