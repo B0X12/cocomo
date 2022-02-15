@@ -4,7 +4,7 @@
   
 ---
   
-2022년 겨울방학 단기 프로젝트 (10주) 관련 문서를 정리해둔 파일입니다.  
+2022년 겨울방학 단기 프로젝트 (2주...) 관련 문서를 정리해둔 파일입니다.  
 백업 용도로 사용되고 있으니 참고바랍니다.  
 </br></br>
   
@@ -15,10 +15,6 @@
 - ***android***  
 	회원가입 및 OTP/QR/지문 인증을 수행하기 위한 목적의 앱입니다.
 	앱에 로그인 한 user의 PC를 원격으로 스크린락하는 기능을 포함합니다.
-	
-- ***cocomo***  
-	QR 코드 생성기입니다.  
-	JSON 형식의 데이터를 기반으로 QR을 생성합니다.  
 	
 - ***rest-server***  
 	~~Spring boot의 MVC 패턴을 통해 작성된 서버입니다.~~  
@@ -39,10 +35,15 @@
 **ETC**  
  - C#
  - Java 11  
- - Java swing
- - Spring boot  
- - Rest API  
- - zxing  
- - lombok
+ - ~~Java swing~~
+  - Rest API  
+ - Spring  
+ - JPA  
+ - hateoas  
+ - hibernate  
+ - zxing (QR)    
+ - HMAC (OTP)    
+ - biometric (Fingerprint)
+ - lombok  
   
 

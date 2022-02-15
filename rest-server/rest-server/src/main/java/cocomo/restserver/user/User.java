@@ -27,7 +27,7 @@ public class User {
     @Id
     @GeneratedValue // 1번부터 자등으로 ++되어 들어감
     private Integer id;
-    String passwd; // 외부에 노출 안되는 데이터
+    private String passwd; // 외부에 노출 안되는 데이터
 
     @Size(min = 3, message = "이름은 2글자 이상 입력해주세요.")
     private String name;

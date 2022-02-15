@@ -1,5 +1,10 @@
 package cocomo.restserver.define;
 
+import cocomo.restserver.auth.AuthUser;
+import cocomo.restserver.auth.qr.QRCode_CreateAndSave;
+import lombok.Data;
+
+@Data
 public class Path {
 
     public static final String ADMIN = "/admin";
@@ -17,5 +22,8 @@ public class Path {
     public static final String AUTH_OTP = "/otp";
     public static final String AUTH_QR = "/qr";
     public static final String AUTH_FINGERPRINT = "/fingerprint";
+
+    // 경로
+    public static final String PATH_QR = QRCode_CreateAndSave.class.getResource("").getPath();
 
 }
