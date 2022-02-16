@@ -18,7 +18,7 @@ public class HomeActivity extends AppCompatActivity {
 
         ActionBar home_tb = getSupportActionBar();
 
-        getSupportActionBar().setIcon(R.drawable.home_top_logo);
+        // getSupportActionBar().setIcon(R.drawable.home_top_logo);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
     }
 }
