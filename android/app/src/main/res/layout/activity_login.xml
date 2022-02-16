@@ -18,15 +18,15 @@
         android:text="😊"
         android:textColor="@color/black"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/editlogin_id"
+        app:layout_constraintBottom_toTopOf="@+id/editText_id"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toEndOf="@+id/textView_title_last"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/textView_title_last"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
@@ -36,13 +36,13 @@
         android:text="입니다"
         android:textColor="#898989"
         android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/editlogin_id"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintBottom_toTopOf="@+id/editText_id"
+        app:layout_constraintStart_toEndOf="@+id/textView_title_cocomo"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/textView_title_cocomo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="70dp"
@@ -51,13 +51,13 @@
         android:text="cocomo"
         android:textColor="#898989"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/editlogin_id"
+        app:layout_constraintBottom_toTopOf="@+id/editText_id"
         app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/buttonlogin_join"
+        android:id="@+id/btn_join"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:layout_marginTop="10dp"
@@ -73,11 +73,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonlogin_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
         app:layout_constraintVertical_bias="0.233" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -85,13 +85,13 @@
         android:text="비밀번호"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/editlogin_pw"
+        app:layout_constraintBottom_toTopOf="@+id/editText_pw"
         app:layout_constraintEnd_toStartOf="@+id/guideline18"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2" />
 
     <EditText
-        android:id="@+id/editlogin_id"
+        android:id="@+id/editText_id"
         android:layout_width="335dp"
         android:layout_height="37dp"
         android:layout_marginTop="225dp"
@@ -99,7 +99,7 @@
         android:background="@drawable/edit_border"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editlogin_pw"
+        app:layout_constraintBottom_toTopOf="@+id/editText_pw"
         app:layout_constraintEnd_toStartOf="@+id/guideline18"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -107,7 +107,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editlogin_pw"
+        android:id="@+id/editText_pw"
         android:layout_width="335dp"
         android:layout_height="37dp"
         android:layout_marginTop="332dp"
@@ -120,7 +120,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonlogin_login"
+        android:id="@+id/btn_login"
         android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginTop="40dp"
@@ -134,7 +134,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline18"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/editlogin_pw" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_pw" />
 
     <TextView
         android:id="@+id/text_subtitle"
@@ -177,7 +177,7 @@
         android:text="ID"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/editlogin_id"
+        app:layout_constraintBottom_toTopOf="@+id/editText_id"
         app:layout_constraintEnd_toStartOf="@+id/guideline18"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2" />
@@ -199,7 +199,7 @@
         android:text="안녕하세요, "
         android:textColor="#898989"
         android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/editlogin_id"
+        app:layout_constraintBottom_toTopOf="@+id/editText_id"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         app:layout_constraintVertical_bias="0.0" />

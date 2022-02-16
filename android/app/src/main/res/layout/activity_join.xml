@@ -64,7 +64,7 @@
         app:layout_constraintStart_toStartOf="@+id/guideline2" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -72,13 +72,13 @@
         android:text="비밀번호"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/editlogin_pw"
+        app:layout_constraintBottom_toTopOf="@+id/editText_pw"
         app:layout_constraintEnd_toStartOf="@+id/guideline18"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2" />
 
     <EditText
-        android:id="@+id/editlogin_id"
+        android:id="@+id/editText_id"
         android:layout_width="335dp"
         android:layout_height="37dp"
         android:layout_marginTop="264dp"
@@ -86,7 +86,7 @@
         android:background="@drawable/edit_border"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editlogin_pw"
+        app:layout_constraintBottom_toTopOf="@+id/editText_pw"
         app:layout_constraintEnd_toStartOf="@+id/guideline18"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -94,7 +94,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editlogin_pw"
+        android:id="@+id/editText_pw"
         android:layout_width="335dp"
         android:layout_height="37dp"
         android:layout_marginTop="336dp"
@@ -167,7 +167,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonjoin_join"
+        android:id="@+id/btnJoin_join"
         android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginTop="40dp"
@@ -209,7 +209,7 @@
         android:text="ID"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/editlogin_id"
+        app:layout_constraintBottom_toTopOf="@+id/editText_id"
         app:layout_constraintEnd_toStartOf="@+id/guideline18"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2" />
@@ -231,7 +231,7 @@
         android:fontFamily="@font/nanumsquarer"
         android:text="아래의 정보를 입력해 회원가입을 진행해주세요."
         android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/editlogin_id"
+        app:layout_constraintBottom_toTopOf="@+id/editText_id"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"

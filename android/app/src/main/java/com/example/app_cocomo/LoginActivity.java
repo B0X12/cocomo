@@ -1,15 +1,12 @@
 package com.example.app_cocomo;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.biometric.BiometricPrompt;
-import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import java.util.concurrent.Executor;
 
@@ -25,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         //회원가입 버튼
-        Button buttonjoin = (Button) findViewById(R.id.buttonlogin_join);
+        Button buttonjoin = (Button) findViewById(R.id.btn_join);
         buttonjoin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         //로그인 버튼
-        Button buttonlogin = (Button) findViewById(R.id.buttonlogin_login);
+        Button buttonlogin = (Button) findViewById(R.id.btn_login);
         buttonlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

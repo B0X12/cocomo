@@ -30,6 +30,7 @@ public class User {
     @Size(min = 3, message = "이름은 2글자 이상 입력해주세요.")
     private String userName;
     private String email;
+    private String phone;
 
     @Past private Date joinDate; // 과거 데이터로만
 

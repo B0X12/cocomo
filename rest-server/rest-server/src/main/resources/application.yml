@@ -1,6 +1,6 @@
 # port 8080(default) -> 1208
 server:
-  port: 1208
+  port: 8080
 
 # org.springframework
 # DEBUG-mode log print
