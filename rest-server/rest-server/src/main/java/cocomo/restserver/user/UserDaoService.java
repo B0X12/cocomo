@@ -14,11 +14,13 @@ public class UserDaoService {
     private static List<User> users = new ArrayList<>();
     private static int usersCount = 0; // 임의로 넣어둔 데이터가 3까지
 
+    /*
     static {
         // DB 확인 위해 임의로 넣어둔 데이터
         users.add(new User(++usersCount, "1234", "coco", "coco@gmail.com" ,new Date()));
         users.add(new User(++usersCount, "abcd", "moco", "mococoococo@gmail.com" ,new Date()));
     }
+    */
 
     public User save(User user)
     {

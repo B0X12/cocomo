@@ -6,7 +6,6 @@ import cocomo.restserver.user.UserNotFoundException;
 import cocomo.restserver.user.UserRepository;
 import com.google.zxing.WriterException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -28,6 +27,7 @@ public class AuthUserController {
 
     @Autowired private AuthUserDaoService service;
     @Autowired private AuthUserRepository authUserRepository;
+    @Autowired private UserRepository userRepository;
 
 
     @GetMapping("/users")

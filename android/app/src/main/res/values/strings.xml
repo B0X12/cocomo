@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">cocomo</string>
+
+    <string name="auth_success_message">0</string>
+    <string name="auth_fail_message">1</string>
+    <string name="auth_error_message">2</string>
+</resources>
