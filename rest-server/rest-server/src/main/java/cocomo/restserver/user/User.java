@@ -21,9 +21,11 @@ import java.util.Date;
 public class User {
 
     // DTO
-    @Id
     @GeneratedValue // 1번부터 자등으로 ++되어 들어감
+    @Id
     private Integer id;
+
+    @Column(unique = true)
     private String userId;
     private String passwd; // 외부에 노출 안되는 데이터
 

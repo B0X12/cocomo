@@ -12,6 +12,7 @@ import retrofit2.http.Query;
 
 import com.example.app_cocomo.User;
 import com.example.app_cocomo.rest.define.DefinePath;
+import com.example.app_cocomo.rest.define.ErrorResponse;
 
 import java.util.HashMap;
 import java.util.List;
@@ -19,12 +20,14 @@ import java.util.Map;
 
 public interface RestBuilder {
 
-    @POST("jpa/users") // 최종
+    @POST("cocomo/join") // 가입
     Call<Void> signUpUser(@Body HashMap<String, String> user);
 
-    @GET("users/{id}") // 선택 유저 조회
-    Call<List<User>> searchUser(@Path("id") int id);
+    @POST("cocomo/login") // 로그인
+    Call<Void> signInUser(@Body HashMap<String, String> user);
+    // token값을 받아옴
 
+    @GET("cocomo/{userId}")
+    Call<User> findUserName(@Path("userId") String userId);
 
 }
-

@@ -99,6 +99,7 @@
         android:background="@drawable/edit_border"
         android:ems="10"
         android:inputType="textPersonName"
+        android:paddingLeft="9dp"
         app:layout_constraintBottom_toTopOf="@+id/editText_pw"
         app:layout_constraintEnd_toStartOf="@+id/guideline18"
         app:layout_constraintHorizontal_bias="1.0"
@@ -113,7 +114,8 @@
         android:layout_marginTop="332dp"
         android:background="@drawable/edit_border"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
+        android:paddingLeft="9dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline18"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -219,6 +221,17 @@
         android:text="지문"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonhome_bio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="196dp"
+        android:text="qr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

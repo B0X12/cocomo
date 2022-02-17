@@ -25,7 +25,7 @@ public class QRCodeController
 	private static int fileNumber = 0;
 	private static LocalTime currentTime;
 	private static String currentTimeStr;
-	public static int Id;
+	public static String Id;
 
 
 	@SuppressWarnings("static-access")
@@ -33,9 +33,15 @@ public class QRCodeController
 	{
 	}
 
-	public static void qrCreate(int userId) throws IOException, WriterException {
+	public static void qrCreate(String userId) {
 		Id = userId;
-		qrData.setTime(fileNumber, userId); // time값 세팅 및 QR코드 생성
+		try {
+			qrData.setTime(fileNumber, userId); // time값 세팅 및 QR코드 생성
+		} catch (WriterException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		// new QrCode_ImageView();
 	}
 

@@ -18,7 +18,7 @@ public class QRCodeData {
 
 
 	@SuppressWarnings("static-access")
-	public static void setTime(int fileNum, int userId) throws WriterException, IOException
+	public static void setTime(int fileNum, String userId) throws WriterException, IOException
 	{
 		// time값 받아오기
 		currentTime = LocalTime.now();
@@ -33,7 +33,7 @@ public class QRCodeData {
 	}
 
 
-	public static JSONObject setJsonData(int userId)
+	public static JSONObject setJsonData(String userId)
 	{
 		JSONObject json = new JSONObject();
 

@@ -1,18 +1,75 @@
 package com.example.app_cocomo;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.example.app_cocomo.auth.qr.QrActivity;
+import com.example.app_cocomo.rest.RestBuilder;
+import com.example.app_cocomo.rest.define.DefinePath;
+import com.example.app_cocomo.rest.define.LogTag;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 public class HomeActivity extends AppCompatActivity {
+
+    private User userData;
+
+    private TextView tvUserName;
+    private String userId;
+    private String userName;
+
+    private RestBuilder restBuilder;
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+
+        // REST API 통신
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(DefinePath.DEFAULT) // localhost:1208/
+                .addConverterFactory(GsonConverterFactory.create()) // JSON -> Java 객체 변환
+                .build();
+
+        restBuilder = retrofit.create(RestBuilder.class);
+
+
+        // QR 스캔
+        Button btnQr = (Button)findViewById(R.id.home_button_qr);
+        btnQr.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(HomeActivity.this, QrActivity.class);
+                // startActivityForResult(intent, REQUEST_CODE);
+                startActivity(intent);
+            }
+        });
+
+
+        /*
+         * 상단바
+         */
         Toolbar tb = (Toolbar) findViewById(R.id.toolbarmain);
         setSupportActionBar(tb);
 
@@ -20,5 +77,44 @@ public class HomeActivity extends AppCompatActivity {
 
         // getSupportActionBar().setIcon(R.drawable.home_top_logo);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+
+        /*
+         * userName Setting, Toast Message
+         */
+        tvUserName = (TextView)findViewById(R.id.tvHome_userName);
+
+        Intent intent = getIntent();
+        userId = intent.getStringExtra("userId");
+
+        userNameSetting();
     }
+
+
+    private void userNameSetting()
+    {
+        restBuilder.findUserName(userId).enqueue(new Callback<User>()
+        {
+            @Override
+            public void onResponse(Call<User> call, Response<User> response)
+            {
+                if (response.isSuccessful())
+                {
+                    userData = response.body();
+                    userName = userData.getUserName();
+                    tvUserName.setText(userName);
+
+                    Log.d(LogTag.HomeTag, userData.toString());
+                    Toast.makeText(HomeActivity.this, userName + "님 반갑습니다!", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<User> call, Throwable t)
+            {
+                Log.d(LogTag.HomeTag, "REST API" + LogTag.FAILED + t.getMessage());
+            }
+        });
+    }
+
 }

@@ -2,6 +2,7 @@ package cocomo.restserver.auth;
 
 import cocomo.restserver.auth.otp.OtpController;
 import cocomo.restserver.auth.qr.QRCodeController;
+import cocomo.restserver.user.User;
 import cocomo.restserver.user.UserNotFoundException;
 import cocomo.restserver.user.UserRepository;
 import com.google.zxing.WriterException;
@@ -74,10 +75,20 @@ public class AuthUserController {
         return model;
     }
 
-    @GetMapping("/qr/{id}")
-    public int qrCreate(@PathVariable int id) throws IOException, WriterException // 전체 유저 조회
+    @GetMapping("/qr/{userId}")
+    public int findUserName(@PathVariable String userId)
     {
-        QRCodeController.qrCreate(id);
+        Optional<User> findUser = userRepository.findByUserId(userId);
+
+        if (!findUser.isPresent()) // 검색한 id가 존재하지 않으면
+        {
+            throw new UserNotFoundException(String.format("ID[%s] not found", userId));
+        }
+        else
+        {
+            QRCodeController.qrCreate(userId);
+        }
+
         return Status.QR_CREATED;
     }
 
