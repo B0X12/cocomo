@@ -1,6 +1,6 @@
 package cocomo.restserver.define;
 
-import cocomo.restserver.auth.qr.QRCodeController;
+import cocomo.restserver.auth.qr.QRCodeService;
 import lombok.Data;
 
 @Data
@@ -23,6 +23,6 @@ public class Path {
     public static final String AUTH_FINGERPRINT = "/fingerprint";
 
     // 경로
-    public static final String PATH_QR = QRCodeController.class.getResource("").getPath();
+    public static final String PATH_QR = QRCodeService.class.getResource("").getPath();
 
 }

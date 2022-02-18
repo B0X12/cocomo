@@ -11,6 +11,7 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 import com.example.app_cocomo.User;
+import com.example.app_cocomo.rest.define.AuthUser;
 import com.example.app_cocomo.rest.define.DefinePath;
 import com.example.app_cocomo.rest.define.ErrorResponse;
 
@@ -19,6 +20,10 @@ import java.util.List;
 import java.util.Map;
 
 public interface RestBuilder {
+
+    /*
+     * User
+     */
 
     @POST("cocomo/join") // 가입
     Call<Void> signUpUser(@Body HashMap<String, String> user);
@@ -29,5 +34,17 @@ public interface RestBuilder {
 
     @GET("cocomo/{userId}")
     Call<User> findUserName(@Path("userId") String userId);
+
+
+
+    /*
+     * Auth
+     */
+
+    @POST("/auth/qr/{userId}") // QR 결과 반환
+    Call<Void> authQrResult(@Path("userId") String userId, @Body HashMap<String, String> authUser);
+
+    @POST("/auth/finger/{userId}") // 지문인증 결과 반환
+    Call<Void> authFingerResult(@Path("userId") String userId, @Body HashMap<String, String> authUser);
 
 }

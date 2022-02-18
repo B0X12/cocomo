@@ -111,7 +111,7 @@ public class QrCodeImageView extends JFrame implements ActionListener {
 				if (fileList != 0) { fileList = 0; } // label은 0과 1만 사용 (파일 무한생성 방지)
 				else { fileList++; }
 
-				qrData.setTime(fileList, QRCodeController.Id); // QR코드 재생성
+				qrData.setTime(fileList, QRCodeService.Id); // QR코드 재생성
 				timer.cancel();
 				setTimer(); // 남은 시간 갱신
 			} catch (WriterException | IOException e1) {

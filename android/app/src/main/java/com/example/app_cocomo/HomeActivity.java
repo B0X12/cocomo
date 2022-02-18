@@ -1,20 +1,19 @@
 package com.example.app_cocomo;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.example.app_cocomo.auth.fingerprint.FingerprintActivity;
+import com.example.app_cocomo.auth.otp.OtpActivity;
 import com.example.app_cocomo.auth.qr.QrActivity;
 import com.example.app_cocomo.rest.RestBuilder;
 import com.example.app_cocomo.rest.define.DefinePath;
@@ -33,6 +32,7 @@ public class HomeActivity extends AppCompatActivity {
     private TextView tvUserName;
     private String userId;
     private String userName;
+    private int userAuthResult;
 
     private RestBuilder restBuilder;
 
@@ -53,6 +53,35 @@ public class HomeActivity extends AppCompatActivity {
         restBuilder = retrofit.create(RestBuilder.class);
 
 
+        // Toolbar Setting
+        Toolbar tb = (Toolbar) findViewById(R.id.toolbarmain);
+        setSupportActionBar(tb);
+        ActionBar home_tb = getSupportActionBar();
+        // getSupportActionBar().setIcon(R.drawable.home_top_logo);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+
+        // userName Setting, Toast Message
+        tvUserName = (TextView)findViewById(R.id.tvHome_userName);
+        Intent intent = getIntent();
+        userId = intent.getStringExtra("userId");
+        userNameSetting();
+
+
+        // OTP
+        Button btnOtp = (Button)findViewById(R.id.home_button_otp);
+        btnOtp.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intentOtp = new Intent(HomeActivity.this, OtpActivity.class);
+                intentOtp.putExtra("userId", userId);
+                startActivity(intentOtp);
+            }
+        });
+
+
         // QR 스캔
         Button btnQr = (Button)findViewById(R.id.home_button_qr);
         btnQr.setOnClickListener(new View.OnClickListener()
@@ -60,34 +89,26 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(HomeActivity.this, QrActivity.class);
-                // startActivityForResult(intent, REQUEST_CODE);
-                startActivity(intent);
+                Intent intentQr = new Intent(HomeActivity.this, QrActivity.class);
+                intentQr.putExtra("userId", userId);
+                startActivity(intentQr);
             }
         });
 
 
-        /*
-         * 상단바
-         */
-        Toolbar tb = (Toolbar) findViewById(R.id.toolbarmain);
-        setSupportActionBar(tb);
+        // 지문인증
+        Button btnFingerprint = (Button)findViewById(R.id.home_button_bio);
+        btnFingerprint.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intentFinger = new Intent(HomeActivity.this, FingerprintActivity.class);
+                intentFinger.putExtra("userId", userId);
+                startActivity(intentFinger);
+            }
+        });
 
-        ActionBar home_tb = getSupportActionBar();
-
-        // getSupportActionBar().setIcon(R.drawable.home_top_logo);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-
-
-        /*
-         * userName Setting, Toast Message
-         */
-        tvUserName = (TextView)findViewById(R.id.tvHome_userName);
-
-        Intent intent = getIntent();
-        userId = intent.getStringExtra("userId");
-
-        userNameSetting();
     }
 
 

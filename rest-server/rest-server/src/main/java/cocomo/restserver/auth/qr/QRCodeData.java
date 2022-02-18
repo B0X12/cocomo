@@ -11,7 +11,7 @@ import org.json.simple.JSONObject;
 
 public class QRCodeData {
 
-	private static QRCodeController qrCreate = new QRCodeController();
+	private static QRCodeService qrCreate = new QRCodeService();
 
 	public static LocalTime currentTime;
 	public static String currentTimeStr;
@@ -28,8 +28,8 @@ public class QRCodeData {
 
 		// 파일위치 및 파일명, 링크주소, 사이즈, 이미지타입
 		// 파일명에 라벨링을 안해주면 이미지 갱신이 안됨
-		QRCodeController.createQRImage(new File(Path.PATH_QR + "/cocomoQR" + fileNum + ".png")
-				, resultJson.toString(), 400, "png");
+		QRCodeService.createQRImage(new File(Path.PATH_QR + "/cocomoQR" + fileNum + ".png")
+				, resultJson.toString(), 200, "png");
 	}
 
 
@@ -38,7 +38,7 @@ public class QRCodeData {
 		JSONObject json = new JSONObject();
 
 		json.put("identifier", "cocomo"); // 프로젝트명과
-		json.put("id", userId); // 요청한 User ID로 식별
+		json.put("userId", userId); // 요청한 User ID로 식별
 		json.put("timeStamp", currentTimeStr); // 현재 시간도 넘겨줌
 
 		return json;

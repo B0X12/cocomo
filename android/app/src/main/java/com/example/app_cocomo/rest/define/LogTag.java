@@ -9,7 +9,13 @@ public class LogTag {
     public static String JoinTag = MainTag + " JOIN] ";
     public static String LoginTag = MainTag + " LOGIN] ";
     public static String HomeTag = MainTag + " HOME] ";
-    public static String QRTag = MainTag + " QR-SCAN] ";
+
+
+    public static String OtpTag = MainTag + " OTP] ";
+    public static String QrTag = MainTag + " QRSCAN] ";
+    public static String FingerTag = MainTag + " FINGER] ";
+
+
 
     public static String SUCCESS = " >>> Success";
     public static String FAILED = " >>> Failed >>> ";

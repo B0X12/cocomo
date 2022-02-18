@@ -1,6 +1,5 @@
 package cocomo.restserver.auth.qr;
 
-import cocomo.restserver.user.UserRepository;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.EncodeHintType;
 import com.google.zxing.WriterException;
@@ -18,31 +17,34 @@ import java.util.Hashtable;
 
 import javax.imageio.ImageIO;
 
-public class QRCodeController
+public class QRCodeService
 {
 
 	private static QRCodeData qrData = new QRCodeData();
 	private static int fileNumber = 0;
 	private static LocalTime currentTime;
 	private static String currentTimeStr;
-	public static String Id;
 
+	public static String Id;
 
 	@SuppressWarnings("static-access")
 	public static void main(String[] args, int userId) throws Exception
 	{
 	}
 
-	public static void qrCreate(String userId) {
+	public static boolean qrCreate(String userId) {
 		Id = userId;
 		try {
 			qrData.setTime(fileNumber, userId); // time값 세팅 및 QR코드 생성
+			System.out.println("#COCOMO: " + userId);
 		} catch (WriterException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		// new QrCode_ImageView();
+
+		return true;
 	}
 
 	public static void createQRImage(File qrFile, String jsonData, int size, String fileType)

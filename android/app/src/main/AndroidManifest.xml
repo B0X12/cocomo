@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App_cocomo"
         android:usesCleartextTraffic="true">
-        <activity android:name=".auth.qr.QrActivity"></activity>
+        <activity android:name=".auth.fingerprint.FingerprintActivity"></activity>
+        <activity android:name=".auth.otp.OtpActivity" />
+        <activity android:name=".auth.qr.QrActivity" />
         <activity
             android:name=".IntroActivity"
             android:exported="true">

@@ -1,7 +1,6 @@
 package com.example.app_cocomo;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.biometric.BiometricPrompt;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,20 +8,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.app_cocomo.auth.qr.QrActivity;
+import com.example.app_cocomo.auth.fingerprint.FingerprintActivity;
 import com.example.app_cocomo.rest.RestBuilder;
 import com.example.app_cocomo.rest.define.DefinePath;
-import com.example.app_cocomo.rest.define.ErrorResponse;
 import com.example.app_cocomo.rest.define.LogTag;
-import com.google.gson.Gson;
-
-import org.json.JSONObject;
 
 import java.util.HashMap;
-import java.util.concurrent.Executor;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -32,9 +25,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private Executor executor;
-    private BiometricPrompt biometricPrompt;
-    private BiometricPrompt.PromptInfo promptInfo;
 
     private EditText etUserId;
     private EditText etPasswd;
@@ -97,55 +87,15 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
-        /*
-        //지문
-        executor = ContextCompat.getMainExecutor(this);
-        biometricPrompt = new BiometricPrompt(this,
-                executor, new BiometricPrompt.AuthenticationCallback() {
-            @Override
-            public void onAuthenticationError(int errorCode,
-                                              @NonNull CharSequence errString) {
-                super.onAuthenticationError(errorCode, errString);
-                Toast.makeText(getApplicationContext(),
-                        R.string.auth_error_message, Toast.LENGTH_SHORT).show();
-
-                Intent intent_main = new Intent(getApplicationContext(), HomeActivity.class);
-                startActivity(intent_main);
-            }
-
-            @Override
-            public void onAuthenticationSucceeded(
-                    @NonNull BiometricPrompt.AuthenticationResult result) {
-                super.onAuthenticationSucceeded(result);
-                Toast.makeText(getApplicationContext(),
-                        R.string.auth_success_message, Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onAuthenticationFailed() {
-                super.onAuthenticationFailed();
-                Toast.makeText(getApplicationContext(), R.string.auth_fail_message, Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        promptInfo = new BiometricPrompt.PromptInfo.Builder()
-                .setTitle("지문 인증")
-                .setSubtitle("기기에 등록된 지문을 이용하여 지문을 인증해주세요.")
-                .setNegativeButtonText("취소")
-                .setDeviceCredentialAllowed(false)
-                .build();
-
-        //  사용자가 다른 인증을 이용하길 원할 때 추가하기
 
         Button biometricLoginButton = findViewById(R.id.buttonhome_bio);
         biometricLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                biometricPrompt.authenticate(promptInfo);
-
+                Intent intent = new Intent(LoginActivity.this, FingerprintActivity.class);
+                startActivity(intent);
             }
         });
-        */
 
 
     }
@@ -177,7 +127,7 @@ public class LoginActivity extends AppCompatActivity {
         HashMap<String, String> map = new HashMap<>();
         map.put("userId", etUserId.getText().toString());
         map.put("passwd", etPasswd.getText().toString());
-        Log.d(LogTag.JoinTag, "POST Body: " + map.toString());
+        Log.d(LogTag.LoginTag, "POST Body: " + map.toString());
 
         restBuilder.signInUser(map).enqueue(new Callback<Void>()
         {

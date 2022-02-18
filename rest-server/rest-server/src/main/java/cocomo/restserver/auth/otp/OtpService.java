@@ -12,7 +12,7 @@ import javax.crypto.spec.SecretKeySpec;
 import cocomo.restserver.auth.AuthUser;
 import org.apache.commons.codec.binary.Base32;
 
-public class OtpController {
+public class OtpService {
 
     private static AuthUser authUser = new AuthUser();
 

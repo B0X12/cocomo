@@ -14,7 +14,10 @@ import javax.persistence.*;
 public class AuthUser {
 
     @Id private Integer id;
+    @Column(unique = true) private String userId;
     private String otpKey;
     private String otpCode;
+    private int authQrResult;
+    private int authFingerResult;
 
 }
