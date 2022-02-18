@@ -7,6 +7,7 @@ import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
@@ -46,5 +47,14 @@ public interface RestBuilder {
 
     @POST("/auth/finger/{userId}") // 지문인증 결과 반환
     Call<Void> authFingerResult(@Path("userId") String userId, @Body HashMap<String, String> authUser);
+
+
+
+    /*
+     * Screenlock
+     */
+
+    @PUT("/auth/lock/{userId}")
+    Call<Void> startScreenlock(@Path("userId") String userId);
 
 }

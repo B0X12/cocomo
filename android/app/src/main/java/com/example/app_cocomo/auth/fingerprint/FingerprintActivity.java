@@ -4,11 +4,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.biometric.BiometricPrompt;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.example.app_cocomo.HomeActivity;
 import com.example.app_cocomo.R;
@@ -28,12 +28,12 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class FingerprintActivity extends AppCompatActivity {
 
+    // 지문 인증
     private Executor executor;
     private BiometricPrompt biometricPrompt;
     private BiometricPrompt.PromptInfo promptInfo;
 
     private String userId;
-    private boolean waitAuth;
     private int authResult;
 
     private RestBuilder restBuilder;
@@ -105,11 +105,6 @@ public class FingerprintActivity extends AppCompatActivity {
 
     }
 
-    public void authFingerprint()
-    {
-
-    }
-
     private void sendRequest(int authResult)
     {
         HashMap<String, String> map = new HashMap<>();
@@ -137,5 +132,4 @@ public class FingerprintActivity extends AppCompatActivity {
             }
         });
     }
-
 }

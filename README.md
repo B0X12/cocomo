@@ -13,18 +13,22 @@
 ## 파일 구성
   
 - ***android***  
-	회원가입 및 OTP/QR/지문 인증을 수행하기 위한 목적의 앱입니다.
+	회원가입 및 OTP/QR/지문 인증을 수행하기 위한 목적의 앱입니다.  
 	앱에 로그인 한 user의 PC를 원격으로 스크린락하는 기능을 포함합니다.
 	
 - ***rest-server***  
 	~~Spring boot의 MVC 패턴을 통해 작성된 서버입니다.~~  
 	-> 현재 REST API를 사용한 RESTful Web으로 수정하였습니다.
-	*android - client - db*의 통신에 사용됩니다.  
+	*Android/PC Client - DB*간 통신에 사용됩니다.  
 	  
 </br></br>
   
   
 ## 사용 기술 및 라이브러리
+
+**Platform**  
+ - Window 10
+ - Android 11
   
 **IDE, DB**  
  - Intelij & Eclipse 
@@ -36,14 +40,11 @@
  - C#
  - Java 11  
  - ~~Java swing~~
-  - Rest API  
- - Spring  
- - JPA  
- - hateoas  
- - hibernate  
+ - Rest API  
+ - Spring Framework  
+ - JPA hibernate    
  - zxing (QR)    
  - HMAC (OTP)    
  - biometric (Fingerprint)
  - lombok  
   
-

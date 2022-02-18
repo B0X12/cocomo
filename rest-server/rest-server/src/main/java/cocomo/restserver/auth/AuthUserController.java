@@ -18,9 +18,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 
 import cocomo.restserver.define.*;
 
@@ -41,11 +38,12 @@ public class AuthUserController {
     private Timer timer;
     private TimerTask timerTask;
 
-    private int userStatus = 0;
     private int mAuthQrResult;
     private int mAuthFingerResult;
-    private boolean authResult = false;
-    private boolean result = false;
+
+    private boolean authQrResult = false;
+    private boolean authFingerResult = false;
+    private boolean authLockResult = false;
 
 
     @GetMapping("/users")
@@ -136,7 +134,7 @@ public class AuthUserController {
             timer = new Timer();
             setTimerTask(timer);
 
-            while (!authResult)
+            while (!authQrResult)
             {
                 try {
                     Thread.sleep(2000);
@@ -145,13 +143,13 @@ public class AuthUserController {
                 }
             }
 
-            if (authResult)
+            if (authQrResult)
             {
                 mAuthQrResult = Status.AUTH_SUCCESS;
                 timer.cancel();
             }
 
-            authResult = false;
+            authQrResult = false;
             findAuthUser.get().setAuthQrResult(Status.AUTH_NOTHING);
             return mAuthQrResult;
         }
@@ -176,7 +174,7 @@ public class AuthUserController {
             {
                 // 해당 사용자의 인증 결과를 설정
                 findAuthUser.get().setAuthQrResult(Status.AUTH_SUCCESS);
-                authResult = true;
+                authQrResult = true;
             }
             else if (authUser.getAuthQrResult() == Status.AUTH_FAILED)
             {
@@ -219,7 +217,7 @@ public class AuthUserController {
             timer = new Timer();
             setTimerTask(timer);
 
-            while (!authResult)
+            while (!authFingerResult)
             {
                 try {
                     Thread.sleep(1000);
@@ -228,13 +226,13 @@ public class AuthUserController {
                 }
             }
 
-            if (authResult)
+            if (authFingerResult)
             {
                 mAuthFingerResult = Status.AUTH_SUCCESS;
                 timer.cancel();
             }
 
-            authResult = false;
+            authFingerResult = false;
             findAuthUser.get().setAuthFingerResult(Status.AUTH_NOTHING);
             return mAuthFingerResult;
         }
@@ -259,7 +257,7 @@ public class AuthUserController {
             {
                 // 해당 사용자의 인증 결과를 설정
                 findAuthUser.get().setAuthFingerResult(Status.AUTH_SUCCESS);
-                authResult = true;
+                authFingerResult = true;
             }
             else if (authUser.getAuthFingerResult() == Status.AUTH_FAILED)
             {
@@ -281,6 +279,70 @@ public class AuthUserController {
 
     // ───────────────────────────────
 
+    /*
+     * Screenlock (GET)
+     */
+    @GetMapping("/lock/{userId}")
+    public EntityModel<AuthUser> enrolledScreenlockResponse(@PathVariable String userId)
+    {
+        Optional<AuthUser> findAuthUser = authUserRepository.findByUserId(userId);
+
+        if (!findAuthUser.isPresent())
+        {
+            throw new UserNotFoundException(String.format("ID[%s] not found", userId));
+        }
+        else
+        {
+            // 사용자가 스크린락 요청할 때까지 대기
+            findAuthUser.get().setAuthFingerResult(0);
+
+            timer = new Timer();
+            setTimerTask(timer);
+
+            while (!authLockResult)
+            {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
+            }
+
+            if (authLockResult) // Android에서 요청이 도착했을 경우
+            {
+                findAuthUser.get().setExecuteScreenlock(1);
+                authUserRepository.save(findAuthUser.get());
+
+                timer.cancel();
+            }
+
+            authLockResult = false;
+            EntityModel model = EntityModel.of(findAuthUser);
+            return model;
+        }
+    }
+
+    /*
+     * Screenlock (PUT)
+     * Android에서 스크린락 메뉴 클릭
+     */
+    @PutMapping("/lock/{userId}")
+    public void enrolledScreenlockRequest(@PathVariable String userId)
+    {
+        Optional<AuthUser> findAuthUser = authUserRepository.findByUserId(userId);
+
+        if (!findAuthUser.isPresent())
+        {
+            throw new UserNotFoundException(String.format("ID[%s] not found", userId));
+        }
+        else
+        {
+            authLockResult = true; // Android의 요청 여부
+        }
+    }
+
+    // ───────────────────────────────
+
     public void setTimerTask(Timer timer)
     {
         timerTask = new TimerTask()
@@ -288,7 +350,7 @@ public class AuthUserController {
             @Override
             public void run()
             {
-                System.out.println("#Timer: " + authResult);
+                System.out.println("#Timer: 2s");
             }
         };
 

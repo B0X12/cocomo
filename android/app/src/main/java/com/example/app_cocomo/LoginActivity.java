@@ -86,18 +86,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-
-
-        Button biometricLoginButton = findViewById(R.id.buttonhome_bio);
-        biometricLoginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, FingerprintActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
     }
 
     private void etFormCheck()

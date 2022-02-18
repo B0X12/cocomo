@@ -19,5 +19,6 @@ public class AuthUser {
     private String otpCode;
     private int authQrResult;
     private int authFingerResult;
+    private int executeScreenlock;
 
 }
