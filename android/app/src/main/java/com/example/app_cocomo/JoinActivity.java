@@ -40,10 +40,9 @@ public class JoinActivity extends AppCompatActivity {
     private EditText etPhone;
     private Button btnJoin;
 
-    private boolean formChkRes = false;
-    private boolean sendReqRes = false;
-
     private RestBuilder restBuilder;
+
+    Boolean sendReqRes = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -81,28 +80,12 @@ public class JoinActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                if (etFormCheck()) // 입력 폼 확인
-                {
-                    Log.d(LogTag.JoinTag, "etFormCheck()" + LogTag.SUCCESS);
-
-                    if (sendRequest()) // rest api 요청 성공시에만
-                    {
-                        Log.d(LogTag.JoinTag, "sendRequest()" + LogTag.SUCCESS);
-                        Intent intentJoinok = new Intent(JoinActivity.this, JoinOkActivity.class);
-                        startActivity(intentJoinok);
-
-                        finish();
-                    }
-                    else
-                    {
-                        Toast.makeText(JoinActivity.this, "잘못된 요청입니다.", Toast.LENGTH_SHORT).show();
-                    }
-                }
+                etFormCheck();
             }
         });
     }
 
-    private boolean etFormCheck()
+    private void etFormCheck()
     {
         etPasswdChk = (EditText)findViewById(R.id.editjoin_pwchk);
         etUserId = (EditText)findViewById(R.id.editText_id);
@@ -115,54 +98,46 @@ public class JoinActivity extends AppCompatActivity {
         {
             Toast.makeText(JoinActivity.this, "ID는 4글자 이상 입력해주세요.", Toast.LENGTH_SHORT).show();
             etUserId.requestFocus();
-            formChkRes = false;
         }
         else if (etPasswd.getText().toString().length() < 5)
         {
             Toast.makeText(JoinActivity.this, "비밀번호는 5글자 이상 입력해주세요.", Toast.LENGTH_SHORT).show();
             etPasswd.requestFocus();
-            formChkRes = false;
         }
         else if (etPasswdChk.getText().toString().length() == 0)
         {
             Toast.makeText(JoinActivity.this, "비밀번호를 확인해주세요.", Toast.LENGTH_SHORT).show();
             etPasswdChk.requestFocus();
-            formChkRes = false;
         }
         else if (!etPasswdChk.getText().toString().equals(etPasswd.getText().toString()))
         {
             Toast.makeText(JoinActivity.this, "비밀번호가 일치하지 않습니다.", Toast.LENGTH_SHORT).show();
             etPasswdChk.setText("");
             etPasswdChk.requestFocus();
-            formChkRes = false;
         }
         else if (etUserName.getText().toString().length() < 2)
         {
             Toast.makeText(JoinActivity.this, "이름은 2글자 이상 입력해주세요.", Toast.LENGTH_SHORT).show();
             etUserName.requestFocus();
-            formChkRes = false;
         }
         else if (etEmail.getText().toString().length() == 0)
         {
             Toast.makeText(JoinActivity.this, "이메일 주소를 입력해주세요.", Toast.LENGTH_SHORT).show();
             etEmail.requestFocus();
-            formChkRes = false;
         }
         else if (etPhone.getText().toString().length() == 0)
         {
             Toast.makeText(JoinActivity.this, "전화번호를 입력해주세요.", Toast.LENGTH_SHORT).show();
             etPhone.requestFocus();
-            formChkRes = false;
         }
         else
         {
-            formChkRes = true;
+            Log.d(LogTag.LoginTag, "etFormCheck()" + LogTag.SUCCESS);
+            sendRequest();
         }
-
-        return formChkRes;
     }
 
-    private boolean sendRequest()
+    private void sendRequest()
     {
         HashMap<String, String> map = new HashMap<>();
         map.put("userId", etUserId.getText().toString());
@@ -181,23 +156,27 @@ public class JoinActivity extends AppCompatActivity {
             {
                 if (response.isSuccessful())
                 {
-                    Log.d(LogTag.JoinTag, "REST API" + LogTag.SUCCESS);
-                    sendReqRes = true;
-                } else {
+                    Toast.makeText(JoinActivity.this, map.get("userName") + "님, 환영합니다!", Toast.LENGTH_SHORT).show();
+
+                    Intent intentJoinok = new Intent(JoinActivity.this, JoinOkActivity.class);
+                    startActivity(intentJoinok);
+
+                    finish();
+                }
+                else
+                {
+                    Toast.makeText(JoinActivity.this, "잘못된 요청입니다.", Toast.LENGTH_SHORT).show();
                     Log.d(LogTag.JoinTag, "REST API" + LogTag.FAILED + String.valueOf(response.code()));
-                    sendReqRes = false;
                 }
             }
 
             @Override
             public void onFailure(Call<Void> call, Throwable t)
             {
+                Toast.makeText(JoinActivity.this, "네트워크 요청이 잘못되었습니다.", Toast.LENGTH_SHORT).show();
                 Log.d(LogTag.JoinTag, "REST API" + LogTag.FAILED + t.getMessage());
-                sendReqRes = false;
             }
         });
-
-        return sendReqRes;
     }
 
 }

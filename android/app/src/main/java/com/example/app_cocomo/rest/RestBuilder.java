@@ -42,6 +42,9 @@ public interface RestBuilder {
      * Auth
      */
 
+    @GET("auth/otp-key/{userId}")
+    Call<AuthUser> getOtpKey(@Path("userId") String userId);
+
     @POST("/auth/qr/{userId}") // QR 결과 반환
     Call<Void> authQrResult(@Path("userId") String userId, @Body HashMap<String, String> authUser);
 

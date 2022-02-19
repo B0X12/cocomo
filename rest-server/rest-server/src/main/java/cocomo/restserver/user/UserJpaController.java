@@ -78,6 +78,7 @@ public class UserJpaController {
     }
 
 
+    /*
     @GetMapping("/users/{id}")
     public EntityModel<User> retrieveUser(@PathVariable int id)
     {
@@ -86,6 +87,28 @@ public class UserJpaController {
         if (!user.isPresent()) // 검색한 id가 존재하지 않으면
         {
             throw new UserNotFoundException(String.format("ID[%s] not found", id));
+        }
+
+        // hateoas
+        EntityModel model = EntityModel.of(user);
+
+        // 이 user에 대한 값을 반환시킬 때,
+        // user가 사용할 수 있는 추가적인 정보를 hyperlink로 넣어줌
+        WebMvcLinkBuilder linkTo = linkTo(methodOn(this.getClass()).retrieveAllUsers());
+
+        model.add(linkTo.withRel("all-users"));
+        return model;
+    }*/
+
+
+    @GetMapping("/users/{userId}")
+    public EntityModel<User> retrieveUserId(@PathVariable String userId)
+    {
+        Optional<User> user = userRepository.findByUserId(userId);
+
+        if (!user.isPresent()) // 검색한 id가 존재하지 않으면
+        {
+            throw new UserNotFoundException(String.format("ID[%s] not found", userId));
         }
 
         // hateoas

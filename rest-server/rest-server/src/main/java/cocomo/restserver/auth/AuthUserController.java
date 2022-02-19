@@ -66,6 +66,24 @@ public class AuthUserController {
     }
 
 
+    // OTP key
+    @GetMapping("/otp-key/{userId}")
+    public EntityModel<AuthUser> getOtpKey(@PathVariable String userId)
+    {
+        Optional<AuthUser> authUser = authUserRepository.findByUserId(userId);
+
+        if (!authUser.isPresent())
+        {
+            throw new UserNotFoundException(String.format("ID[%s] not found", userId));
+        }
+        else
+        {
+            EntityModel model = EntityModel.of(authUser);
+            return model;
+        }
+    }
+
+
     // OtpController
     @GetMapping("/otp/{userId}")
     public EntityModel<AuthUser> authOtp(@PathVariable String userId)
