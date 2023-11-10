@@ -1,0 +1,29 @@
+# port 8080(default) -> 1208
+server:
+  port: 8080
+
+# org.springframework
+# DEBUG-mode log print
+logging:
+  level:
+    org.springframework: DEBUG
+
+# use: Postman - Authorization - Basic Type
+# Related to access control
+spring:
+  jpa:
+    show-sql: true
+    database: h2
+    defer-datasource-initialization: true
+  h2:
+    console:
+      enabled: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+
+#  security:
+#    user:
+#      name: admin
+#      password: admin_password
