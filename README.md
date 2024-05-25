@@ -2,6 +2,8 @@
   <h5>Cocomo</h5>
 </div>
 
+---
+
 ## 프로젝트 소개
 
 <p style="text-align:center;">
@@ -24,6 +26,8 @@
     사용자 2차 인증 솔루션이 자체적으로 구현한 스크린락 위에서 동작합니다.
     일반적인 ID/PW 기반 인증에 OTP, QR, 지문 인증의 추가 인증 방식을 접목하여
     사용자를 인증할 수 있으며, 안드로이드 앱에서 원격으로 스크린락을 제어할 수 있습니다.
+
+[🔗 프로젝트 상세 내용(ppt, 담당 역할 등) 소개 페이지 ➔](https://box0.notion.site/589f7c94c50040d8ac5d370de4249a91?pvs=4)
 
 <br/>
 
@@ -49,6 +53,12 @@
 
 <br/>
 
+## 💿 소개 영상
+
+[![소개 영상](https://github.com/B0X12/cocomo-latest/assets/86587863/9c6c2c5e-020e-45fd-913d-45f5b3c40760)](https://youtu.be/Ho0aqnPkDLM?si=Y2CMBqxbKVoyGhtf)
+
+<br/>
+
 ## ⚙️ 사용 기술
 
 | **분류**               | **기술 스택**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -58,8 +68,6 @@
 | **윈도우 (Screenlock)** | ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white) ![Visual Studio 2019](https://img.shields.io/badge/Visual%20Studio%202019-5C2D91?style=flat-square&logo=visual-studio&logoColor=white)                                                                                                                                                                                                                                                                                                                                                         |
 | **안드로이드 (App)**      | ![Java 11](https://img.shields.io/badge/Java%2011-007396?style=flat-square&logo=java&logoColor=white)<br/> ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat-square&logo=android-studio&logoColor=white)<br/> ![zxing](https://img.shields.io/badge/zxing-000000?style=flat-square&logo=zxing&logoColor=white) ![HMAC (OTP)](https://img.shields.io/badge/HMAC%20(OTP)-FF6F00?style=flat-square&logo=security&logoColor=white) ![biometric](https://img.shields.io/badge/Biometric%20(Fingerprint)-4CAF50?style=flat-square&logo=fingerprint&logoColor=white) |
 
-
-
 <br/>
 
 ## 🏛 아키텍처
@@ -68,14 +76,23 @@
 
 <br/>
 
-## 💿 소개 영상
+## 🏛 발표 자료
 
-[![소개 영상](https://github.com/B0X12/cocomo-latest/assets/86587863/9c6c2c5e-020e-45fd-913d-45f5b3c40760)](https://youtu.be/Ho0aqnPkDLM?si=Y2CMBqxbKVoyGhtf)
+🥉 교내 프로젝트 경진대회 장려상 수상 (10개 팀 중 3위)
+
+| ![Image 1](https://github.com/B0X12/cocomo-latest/assets/86587863/70b8e62b-de0f-451b-ae9c-f7cf1fc5f62f) | ![Image 2](https://github.com/B0X12/cocomo-latest/assets/86587863/ba82b662-0c47-45f3-a65d-d2dd31e1ec59) |
+|:------------------------------------------------------------------:|:------------------------------------------------------------------:|
+| ![Image 3](https://github.com/B0X12/cocomo-latest/assets/86587863/b6a09115-f5be-4229-94b0-16b1f4e80c76) | ![Image 4](https://github.com/B0X12/cocomo-latest/assets/86587863/af3cb205-a978-4bd8-8c84-587aa7fd8594) |
+
+<br/>
+
+---
 
 <br/>
 
 <img src="https://github.com/B0X12/cocomo-latest/assets/86587863/216e2733-e910-41b7-b492-5dfa8936fcfc" width=10% />
 
+<br/>
 <br/>
 
 > 사용 언어 및 라이브러리, 역할 등의 자세한 내용은 여기에 <br/>
