@@ -48,11 +48,11 @@
 ## 🖼 실제 화면
 
 ### 💻 Window
-![image](https://github.com/B0X12/cocomo-latest/assets/86587863/cc94ec94-93ee-4d7c-ac7b-220f1be04d56)
+![window-1](https://github.com/B0X12/cocomo-latest/assets/86587863/cc94ec94-93ee-4d7c-ac7b-220f1be04d56)
 
 ### 📱 Android
-![image](https://github.com/B0X12/cocomo-latest/assets/86587863/bc243290-6f5e-4a17-92cb-b9c8a39e2af4)
-![image](https://github.com/B0X12/cocomo-latest/assets/86587863/aa838116-02da-440c-8f13-b99aa3ca549a)
+![android-1](https://github.com/B0X12/cocomo-latest/assets/86587863/bc243290-6f5e-4a17-92cb-b9c8a39e2af4)
+![android-2](https://github.com/B0X12/cocomo-latest/assets/86587863/aa838116-02da-440c-8f13-b99aa3ca549a)
 
 <br/>
 
@@ -65,12 +65,12 @@
 
 ## 🛠 사용 기술
 
-| **분류**               | **기술 스택**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **공통 개발환경**          | ![Windows 10](https://img.shields.io/badge/Windows%2010-0078D6?style=flat-square&logo=windows&logoColor=white) ![Android 11](https://img.shields.io/badge/Android%2011-3DDC84?style=flat-square&logo=android&logoColor=white)<br/> ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![H2 Database](https://img.shields.io/badge/H2%20Database-4479A1?style=flat-square&logo=h2&logoColor=white)                                                                                                                                               |
+| **분류**               | **기술 스택**       |
+|-----------------------|--------------------|
+| **공통 개발환경**        | ![Windows 10](https://img.shields.io/badge/Windows%2010-0078D6?style=flat-square&logo=windows&logoColor=white) ![Android 11](https://img.shields.io/badge/Android%2011-3DDC84?style=flat-square&logo=android&logoColor=white)<br/> ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![H2 Database](https://img.shields.io/badge/H2%20Database-4479A1?style=flat-square&logo=h2&logoColor=white) |
 | **백엔드 (API Server)** | ![Java 11](https://img.shields.io/badge/Java%2011-007396?style=flat-square&logo=java&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white)<br/> ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=flat-square&logo=intellij-idea&logoColor=white) ![Eclipse](https://img.shields.io/badge/Eclipse-2C2255?style=flat-square&logo=eclipse&logoColor=white)<br/> ![JPA Hibernate](https://img.shields.io/badge/JPA%20Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white) |
-| **윈도우 (Screenlock)** | ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white) ![Visual Studio 2019](https://img.shields.io/badge/Visual%20Studio%202019-5C2D91?style=flat-square&logo=visual-studio&logoColor=white)                                                                                                                                                                                                                                                                                                                                                         |
-| **안드로이드 (App)**      | ![Java 11](https://img.shields.io/badge/Java%2011-007396?style=flat-square&logo=java&logoColor=white)<br/> ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat-square&logo=android-studio&logoColor=white)<br/> ![zxing](https://img.shields.io/badge/zxing-000000?style=flat-square&logo=zxing&logoColor=white) ![HMAC (OTP)](https://img.shields.io/badge/HMAC%20(OTP)-FF6F00?style=flat-square&logo=security&logoColor=white) ![biometric](https://img.shields.io/badge/Biometric%20(Fingerprint)-4CAF50?style=flat-square&logo=fingerprint&logoColor=white) |
+| **윈도우 (Screenlock)** | ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white) ![Visual Studio 2019](https://img.shields.io/badge/Visual%20Studio%202019-5C2D91?style=flat-square&logo=visual-studio&logoColor=white) |
+| **안드로이드 (App)**     | ![Java 11](https://img.shields.io/badge/Java%2011-007396?style=flat-square&logo=java&logoColor=white)<br/> ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat-square&logo=android-studio&logoColor=white)<br/> ![zxing](https://img.shields.io/badge/zxing-000000?style=flat-square&logo=zxing&logoColor=white) ![HMAC (OTP)](https://img.shields.io/badge/HMAC%20(OTP)-FF6F00?style=flat-square&logo=security&logoColor=white) ![biometric](https://img.shields.io/badge/Biometric%20(Fingerprint)-4CAF50?style=flat-square&logo=fingerprint&logoColor=white) |
 
 <br/>
 
@@ -84,9 +84,9 @@
 
 🥉 교내 프로젝트 경진대회 장려상 수상 (10개 팀 중 3위)
 
-| ![Image 1](https://github.com/B0X12/cocomo-latest/assets/86587863/70b8e62b-de0f-451b-ae9c-f7cf1fc5f62f) | ![Image 2](https://github.com/B0X12/cocomo-latest/assets/86587863/ba82b662-0c47-45f3-a65d-d2dd31e1ec59) |
-|:------------------------------------------------------------------:|:------------------------------------------------------------------:|
-| ![Image 3](https://github.com/B0X12/cocomo-latest/assets/86587863/b6a09115-f5be-4229-94b0-16b1f4e80c76) | ![Image 4](https://github.com/B0X12/cocomo-latest/assets/86587863/af3cb205-a978-4bd8-8c84-587aa7fd8594) |
+| ![표지](https://github.com/B0X12/cocomo-latest/assets/86587863/70b8e62b-de0f-451b-ae9c-f7cf1fc5f62f) | ![개발환경](https://github.com/B0X12/cocomo-latest/assets/86587863/ba82b662-0c47-45f3-a65d-d2dd31e1ec59) |
+|:-------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|
+| ![주요기능](https://github.com/B0X12/cocomo-latest/assets/86587863/b6a09115-f5be-4229-94b0-16b1f4e80c76) | ![향후계획](https://github.com/B0X12/cocomo-latest/assets/86587863/af3cb205-a978-4bd8-8c84-587aa7fd8594) |
 
 <br/>
 
