@@ -1,0 +1,42 @@
+
+™
+java:S1104	"XMake AUTH_NOTHING a static final constant or non-public and provide accessors if needed.(Éİ¯ÇşÿÿÿÿJ$47f75dd8-d4c3-4553-ad4e-e43b039ab775
+“
+java:S1104
+"WMake AUTH_FAILED a static final constant or non-public and provide accessors if needed.(¾¾©J$cb801435-227d-4d33-be01-acdffa51782c
+’
+java:S1104"VMake AUTH_ERROR a static final constant or non-public and provide accessors if needed.(Æ¤ŒJ$1f4bd0cb-6862-4df8-a031-bc199bdee756
+”
+java:S1104"XMake AUTH_SUCCESS a static final constant or non-public and provide accessors if needed.(¶†…ÃJ$0209bf8f-8087-4693-923f-d2df07c8d242
+’
+java:S1104"WMake OTP_CREATED a static final constant or non-public and provide accessors if needed.(ôŸ¶hJ$aa86f5a3-294d-4ecf-9ec0-b44265bac901
+—
+java:S1104"VMake QR_CREATED a static final constant or non-public and provide accessors if needed.(™÷ÁÊüÿÿÿÿJ$c35b124a-d2f2-469a-af85-b79a6067e601
+s
+java:S1444	"2Make this "public static AUTH_NOTHING" field final(Éİ¯ÇşÿÿÿÿJ$cf0c9e36-0045-4080-bb90-d2ad3965ac45
+m
+java:S1444
+"1Make this "public static AUTH_FAILED" field final(¾¾©J$9c949689-53e5-4a14-a112-30576f65d107
+l
+java:S1444"0Make this "public static AUTH_ERROR" field final(Æ¤ŒJ$b95bbbb3-8387-4950-995e-98c70be9a36d
+n
+java:S1444"2Make this "public static AUTH_SUCCESS" field final(¶†…ÃJ$a6268659-6ced-4de0-ae2b-2dfa5cf430a5
+l
+java:S1444"1Make this "public static OTP_CREATED" field final(ôŸ¶hJ$0f17304e-f664-463d-96fa-e4a633fbd1c3
+q
+java:S1444"0Make this "public static QR_CREATED" field final(™÷ÁÊüÿÿÿÿJ$26a461c3-f841-416c-a24f-c8744dab20af
+˜
+java:S3008	"WRename this field "AUTH_NOTHING" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éİ¯ÇşÿÿÿÿJ$ca5fbc28-db11-49b6-b7bb-ee5f9ba86fc2
+’
+java:S3008
+"VRename this field "AUTH_FAILED" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¾©J$10b038c9-9ede-4115-8cef-7938dbcc9959
+‘
+java:S3008"URename this field "AUTH_ERROR" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ¤ŒJ$93c101a0-b0ee-466c-99aa-1ec8a4db9968
+“
+java:S3008"WRename this field "AUTH_SUCCESS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶†…ÃJ$943108a2-67ff-4d7d-a515-d607d52f6585
+‘
+java:S3008"VRename this field "OTP_CREATED" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôŸ¶hJ$8475a945-3e49-4de7-bd1f-46ceed1cdcb6
+–
+java:S3008"URename this field "QR_CREATED" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™÷ÁÊüÿÿÿÿJ$c86ce669-6fa9-426c-937d-78b12718b8f9
+{
+java:S1118":Add a private constructor to hide the implicit public one.(¡¿üÿÿÿÿJ$21b3cb8a-5dba-4d57-894a-b25b6be91d55

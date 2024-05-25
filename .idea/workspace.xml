@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7892aa9e-7678-48cc-8a08-d8e8f687d89c" name="Changes" comment="refactor: 불필요한 파일 삭제">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cocomo-latest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-client/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-client/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-client/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-client/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-client/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-client/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-client/.idea/render.experimental.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-client/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-client/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_beust_jcommander_1_78.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_github_jai_imageio_jai_imageio_core_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_google_zxing_core_3_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_google_zxing_javase_3_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_h2database_h2_1_4_200.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_11_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_11_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__net_minidev_json_smart_2_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_17_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_56.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_56.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_56.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_assertj_assertj_core_3_21_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_hibernate_hibernate_core_5_6_4_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_2_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_jboss_jandex_2_4_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_mockito_mockito_core_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_projectlombok_lombok_1_18_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_33.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_33.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_hateoas_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_hateoas_spring_hateoas_1_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_spring_aop_5_3_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_spring_beans_5_3_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_spring_context_5_3_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_spring_core_5_3_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_spring_expression_5_3_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_spring_orm_5_3_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_spring_test_5_3_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_spring_tx_5_3_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_spring_web_5_3_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/Maven__org_yaml_snakeyaml_1_29.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/classmate_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/classmate_1_5_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/libraries/hibernate_validator_6_2_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/rest-server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/RestServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/RestServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/auth/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/auth/AuthUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/auth/AuthUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/auth/AuthUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/auth/AuthUserDaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/auth/AuthUserDaoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/auth/AuthUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/auth/AuthUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/auth/otp/OtpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/auth/otp/OtpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/auth/qr/QRCodeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/auth/qr/QRCodeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/auth/qr/QRCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/auth/qr/QRCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/auth/qr/QrCodeImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/auth/qr/QrCodeImageView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/define/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/define/Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/define/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/define/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/exception/CustomizedResponseEntityExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/exception/CustomizedResponseEntityExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/exception/ExceptionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/exception/ExceptionResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/rest/RestBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/rest/RestBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/rest/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/rest/RestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/user/AdminUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/user/AdminUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/user/UserDaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/user/UserDaoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/user/UserJpaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/user/UserJpaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/user/UserNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/user/UserNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/user/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/java/cocomo/restserver/user/jwt/jwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/cocomo/restserver/user/jwt/jwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/api-server/src/test/java/cocomo/restserver/RestServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/test/java/cocomo/restserver/RestServerApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2gwWeu7Enkf5ovoMpfuwkQU97EN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\cocomo-latest\api-server" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7892aa9e-7678-48cc-8a08-d8e8f687d89c" name="Changes" comment="" />
+      <created>1716609218894</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716609218894</updated>
+      <workItem from="1716609227538" duration="33000" />
+      <workItem from="1716609293373" duration="442000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactor: 불필요한 파일 삭제" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: 불필요한 파일 삭제" />
+  </component>
+</project>
