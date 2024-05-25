@@ -1,13 +1,0 @@
-
-˜
-java:S1104"WMake currentTime a static final constant or non-public and provide accessors if needed.(ŸÏ×ÜÿÿÿÿÿJ$d43bff78-96f7-4104-9a4f-320f6b419946
-›
-java:S1104"ZMake currentTimeStr a static final constant or non-public and provide accessors if needed.(ªÖé‚øÿÿÿÿJ$99e1885d-79f5-4f2c-8878-a512fd65fbf6
-r
-java:S1444"1Make this "public static currentTime" field final(ŸÏ×ÜÿÿÿÿÿJ$d83268fa-a2c3-482f-9ea7-60e3dbd84f0f
-u
-java:S1444"4Make this "public static currentTimeStr" field final(ªÖé‚øÿÿÿÿJ$eee46e60-4c5d-4093-90ad-eb329ad71a7c
-v
-java:S1118":Add a private constructor to hide the implicit public one.(Î±¨ÌJ$2e4df599-d33a-4a73-ab0d-8fef0a5c3492
-h
-java:S1068",Remove this unused "qrCreate" private field.(Ìµ§J$d5932a11-0a1f-4d32-9ad7-73bd20102853

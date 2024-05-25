@@ -1,19 +1,0 @@
-
-†	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(»ñÉÝÿÿÿÿÿJ$3390596d-f95e-4024-9fc3-63847a134fbb
-Š
-java:S1104"NMake Id a static final constant or non-public and provide accessors if needed.(‚‹›çJ$301c4a9c-9749-4ce2-9887-43d87f040ba8
-d
-java:S1444"(Make this "public static Id" field final(‚‹›çJ$448e7b3e-617b-4c6b-a9e8-85667d54d231
-‰
-java:S3008"MRename this field "Id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚‹›çJ$f7542b8e-b6cf-4bb7-8708-162778ab5483
-Â
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(»ñÉÝÿÿÿÿÿJ$f195a5f9-f07a-4833-b8e8-2368c6d968c4
-’
-java:S11494"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(°™êÃJ$4e0bf477-4810-4593-bea3-ffbfc5309b8c
-v
-java:S1118":Add a private constructor to hide the implicit public one.(úÕÕòJ$6832214a-96d1-4ce9-8b11-d65d04bff95d
-k	java:S106'"+Replace this use of System.out by a logger.(¾ø©åüÿÿÿÿJ$1098691b-4013-4a25-864b-5e9548c8e367
-w	java:S125-"<This block of commented-out lines of code should be removed.(ÿµ¦ÒJ$26774adf-7a86-468a-80d6-50d87742beff
-k	java:S106^"+Replace this use of System.out by a logger.(íéŒ¯øÿÿÿÿJ$7739776a-a446-4647-8cd4-70505f3377a2
-p
-java:S1068"/Remove this unused "currentTime" private field.(âóÚ÷üÿÿÿÿJ$95bf01ef-7362-406d-afea-1520a19eb21a
